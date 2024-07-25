@@ -8,3 +8,7 @@ h1, h2, h3, h4, h5, h6, a, p, ul, ol, li, span{
   font-variation-settings:
     "wdth" 100;
 }
+
+a, p, ul, ol, li, span, button{
+    font-size: calc(13px + 5 * (100vw / 1720));
+}
