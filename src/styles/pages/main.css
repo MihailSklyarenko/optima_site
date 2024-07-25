@@ -3,6 +3,51 @@
 @import "../global/_colors.css";
 @import "../global/_buttons.css";
 @import "../global/_zeroing.css";
+@import "../global/_animations-pseudo.css";
+
+.menu-btn {
+    display: block;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    background-color: #fff;
+    width: 60%;
+    -webkit-box-shadow: 7px 0px 24px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 7px 0px 24px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 7px 0px 24px 0px rgba(34, 60, 80, 0.2);
+}
+
+.menu-btn_burger {
+    position: absolute;
+    top: 20px;
+
+}
+
+.menu-btn_nav-button {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-btn_nav-button_list {
+   position: relative;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-btn_nav-button_list_elem{
+    margin: 10px 30px;
+}
+.menu-btn_adress-button{
+    background-color: #00444b;
+    padding: 10px 30px;
+}
+
+.menu-btn_adress_link p{
+    color: white;
+}
 
 
 header {
@@ -73,7 +118,7 @@ header {
 
 
 .header_adress_link p {
-    min-width: 150px;
+    min-width: 160px;
     margin: 0;
 }
 
@@ -106,4 +151,5 @@ header {
     box-shadow: 0px 0px 4px -3px rgba(0, 68, 75, 0.2);
 
 }
+
 /*_____________________________________________________________________________*/
