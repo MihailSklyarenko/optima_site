@@ -1,4 +1,40 @@
 
+.menu-btn_nav-button_list_elem::before{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    content: '';
+    width: 0%;
+    height: 1px;
+
+    background-color: #00444b;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.header_nav-button_list_elem::before{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    content: '';
+    width: 0%;
+    height: 1px;
+
+    background-color: #00444b;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.menu-btn_nav-button_list_elem:hover::before{
+    transition: .3s;
+    width: 100%;
+}
+
+.header_nav-button_list_elem:hover::before{
+    transition: .3s;
+    width: 100%;
+}
+
 .menu-btn_burger:active .icon1::after{
     transform: rotate(40deg);
     transition: .3s;
