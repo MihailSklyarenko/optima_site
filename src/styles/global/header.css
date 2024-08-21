@@ -5,49 +5,6 @@
 @import "../global/_zeroing.css";
 @import "../global/_animations-pseudo.css";
 
-.menu-btn {
-    display: block;
-    position: relative;
-    z-index: 1;
-    min-height: 100vh;
-    background-color: #fff;
-    width: 60%;
-    -webkit-box-shadow: 7px 0px 24px 0px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 7px 0px 24px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 7px 0px 24px 0px rgba(34, 60, 80, 0.2);
-}
-
-.menu-btn_burger {
-    position: absolute;
-    top: 20px;
-
-}
-
-.menu-btn_nav-button {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.menu-btn_nav-button_list {
-   position: relative;
-    top: 60px;
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-btn_nav-button_list_elem{
-    margin: 10px 30px;
-}
-.menu-btn_adress-button{
-    background-color: #00444b;
-    padding: 10px 30px;
-}
-
-.menu-btn_adress_link p{
-    color: white;
-}
 
 
 header {
@@ -59,33 +16,25 @@ header {
     -moz-box-shadow: 0px 4px 9px -3px rgba(0, 68, 75, 0.2);
     box-shadow: 0px 4px 9px -3px rgba(0, 68, 75, 0.2);
     padding: 10px 0;
-    background-color: white;
+    background-color: #00444D;
 }
 
-.wrapper_header-menu,
-.header_nav-button_list,
-.inner_header_adress-button {
+.header{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
-.header_nav-button_list_elem {
-    padding: 0 10px;
-    min-width: 50px;
 }
 
 /*____Логотип____________________________________________________________________*/
 
-.header_logo {
-    max-width: 250px;
+.logo {
+    max-width: 200px;
     min-width: 150px;
     margin-right: 20px;
     padding: 0 10px;
 }
 
-.header_logo img {
+.logo img {
     width: 100%;
 }
 
