@@ -38,12 +38,14 @@ header {
 
 .nav-menu{
     margin: 0 65px;
+    min-width: 360px;
 }
 
 .nav-menu_elem{
     margin: 0 25px;
     font-weight: 500;
     font-size: calc(14px + 3 * (100vw / 1920));
+    width: 100%;
 }
 
 /*_____________________________________________________________________________*/
