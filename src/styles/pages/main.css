@@ -6,3 +6,49 @@
 @import "../global/_animations-pseudo.css";
 
 
+.wrapper{
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.preview{
+    position: relative;
+    top: 80px;
+    max-width: 1245px;
+    height: 668px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.preview_content{
+    max-width: 470px;
+    color: white;
+    margin-bottom: 166px;
+
+}
+
+.preview_background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+}
+.preview_background_img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.preview_background::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 38, 43, .56);
+    width: 100%;
+    height: 100%;
+
+}
