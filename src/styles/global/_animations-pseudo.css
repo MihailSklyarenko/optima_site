@@ -1,3 +1,5 @@
+/*____Псевдо элменты____________________________________________________________________*/
+
 button:hover{
     -webkit-box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.4);
@@ -6,3 +8,43 @@ button:hover{
 
     transform: translateY(-3px);
 }
+
+/*______________________________________________________________________________________*/
+/*____Псевдо элменты____________________________________________________________________*/
+
+.adress::after{
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -25px;
+    background-image: url(../../assets/ico/placeholder-filled-point.png);
+    background-size: cover;
+    width: calc(14px + 3 * (100vw / 1920));
+    height: calc(14px + 3 * (100vw / 1920));
+}
+.schedule::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    background-image: url(../../assets/ico/clock-time.png);
+    background-size: cover;
+    width: calc(14px + 3 * (100vw / 1920));
+    height: calc(14px + 3 * (100vw / 1920));
+}
+.tell::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    background-image: url(../../assets/ico/telephone.png);
+    background-size: cover;
+    width: calc(16px + 3 * (100vw / 1820));
+    height: calc(16px + 3 * (100vw / 1820));
+}
+
+.schedule_elem:last-child{
+    opacity: 70%;
+}
+
+/*________________________________________________________________________*/
