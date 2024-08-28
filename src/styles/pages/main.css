@@ -6,43 +6,53 @@
 @import "../global/_animations-pseudo.css";
 
 
-.wrapper{
+.wrapper {
     max-width: 1550px;
     margin: 0 auto;
 }
 
-.preview{
+.preview {
     position: relative;
     top: 80px;
-    max-width: 1245px;
-    height: 668px;
+    max-width: 100%;
+    max-height: 668px;
+}
+
+.preview_inner {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
+    align-items: center
 }
-.preview_content{
+
+.conteiner_1248 {
+    max-width: 1248px;
+}
+
+.preview_content {
     max-width: 470px;
     color: white;
-    margin-bottom: 166px;
-
+    margin-top: 105px;
+    padding: 0 20px;
 }
 
-.preview_background{
+
+.preview_background {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
     z-index: -1;
 }
-.preview_background_img{
-    width: 100vw;
+
+.preview_background_img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.preview_background::after{
+.preview_background::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,4 +61,53 @@
     width: 100%;
     height: 100%;
 
+}
+
+.preview_blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: translateY(50%);
+    margin: 40px 0;
+}
+
+
+
+
+.preview_blocks_elem {
+    width: 220px;
+    height: 253px;
+    background-color: white;
+    padding-right: calc(18px + 14 * (100vw / 1248));
+    padding-left: calc(18px + 14 * (100vw / 1248));
+    border-radius: 10px;
+    margin: 6px;
+
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(133, 133, 133, 0.4);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(133, 133, 133, 0.4);
+    box-shadow: 0px 0px 14px 0px rgba(133, 133, 133, 0.4);
+
+}
+
+.preview_blocks_elem_inner {
+
+    height: 253px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.preview_blocks_elem_ico {
+    width: 70px;
+}
+
+.preview_blocks_elem_title {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.preview_blocks_elem_text {
+    margin: 0;
+    min-width: 160px;
 }

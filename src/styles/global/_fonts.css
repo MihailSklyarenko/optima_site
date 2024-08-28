@@ -11,8 +11,10 @@ h1, h2, h3, h4, h5, h6, a, p, ul, ol, li, span{
 }
 
 a, p, ul, ol, li, span, button{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
     font-size: calc(12px + 3 * (100vw / 1920));
-    font-weight: 100;
+    font-weight: 300;
 }
 
 h1{
