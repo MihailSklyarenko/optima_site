@@ -13,6 +13,10 @@ a{
     color: black;
 }
 
+p{
+    margin: 0;
+    line-height: 21px;
+}
 .container {
     position: relative;
     max-width: 2040px;
