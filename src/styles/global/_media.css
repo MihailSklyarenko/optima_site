@@ -3,7 +3,9 @@
 .preview_background {
     height: 100%;
 }
-
+    .preview_inner{
+        max-width: 700px;
+    }
     .preview {
         max-height: 100%;
     }

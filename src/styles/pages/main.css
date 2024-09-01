@@ -20,7 +20,10 @@
     position: relative;
     height: 100%;
 }
-
+.preview_warp{
+    display: flex;
+    justify-content: center;
+}
 .preview_inner {
     display: flex;
     flex-direction: column;
