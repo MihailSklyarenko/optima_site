@@ -5,38 +5,34 @@
 @import "../global/_zeroing.css";
 @import "../global/_animations-pseudo.css";
 
-
+.wrapper_1248px {
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+}
 .wrapper {
     max-width: 1550px;
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
 }
 
 .preview {
     position: relative;
-    top: 80px;
-    max-width: 100%;
-    max-height: 668px;
+    height: 100%;
 }
 
 .preview_inner {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
-    align-items: center
-}
-
-.conteiner_1248 {
-    width: 100%;
-    max-width: 1248px;
 }
 
 
 .preview_content {
     max-width: 470px;
     color: white;
-    margin-top: 105px;
-    padding: 0 20px;
+     padding: calc(70px + 204 * (100vh / 1248)) 20px  calc(30px + 136 * (100vh / 1248)) ;
 }
 
 
@@ -44,8 +40,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 75%;
     width: 100%;
+    height: 760px;
     z-index: -1;
 }
 
@@ -61,7 +57,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 40px 0;
+    margin-bottom: 20px;
 }
 
 
