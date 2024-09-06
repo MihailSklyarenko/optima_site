@@ -1,11 +1,13 @@
 @media (max-width: 1210px) {
 
-.preview_background {
-    height: 100%;
-}
-    .preview_inner{
-        max-width: 700px;
+    .preview_background {
+        height: 100%;
     }
+
+    .preview_inner {
+        max-width: 900px;
+    }
+
     .preview {
         max-height: 100%;
     }
@@ -16,6 +18,17 @@
     }
 }
 
-@media (min-width: 600px) {}
+
+@media (min-width: 1248px) {
+    .preview_blocks_elem {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .preview_content {
+        padding: 150px 0;
+    }
+
+}
 
 @media (max-width: 600px) {}

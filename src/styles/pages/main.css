@@ -7,7 +7,7 @@
 
 .wrapper_1248px {
     width: 100%;
-    max-width: 1248px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 .wrapper {
@@ -201,10 +201,11 @@
 
 .price_name {
     min-width: 170px;
+    text-align: left;
 }
 
 .price_cost {
-    min-width: 50px;
+    min-width: 55px;
     margin-left: 30px;
     text-align: right;
 }
