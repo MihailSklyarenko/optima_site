@@ -17,12 +17,12 @@ a, p, ul, ol, li, span, button{
     font-weight: 300;
 }
 
-h1{
-
+.h3{
+    font-size: 24px;
 }
 
 .fw_bold{
-    font-weight: 800;
+    font-weight: 700;
     color: rgba(0, 68, 77, 1);
 }
 

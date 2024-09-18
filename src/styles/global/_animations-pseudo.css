@@ -47,4 +47,17 @@ button:hover{
     opacity: 70%;
 }
 
+.form_request_content_list_item::before{
+    position: absolute;
+    top: 0;
+    left: -28px;
+
+    content:'';
+    background-image: url(/src/assets/ico/check.png);
+    background-size: contain;
+    width: 20px;
+    height: 100%;
+
+}
+
 /*________________________________________________________________________*/

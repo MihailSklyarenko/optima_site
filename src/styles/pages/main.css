@@ -293,3 +293,36 @@
 
 }
 /*_____________________________________________________________*/
+
+/*form_request_________________________________________________*/
+.form_request{
+
+    background-color: rgba(245, 245, 245, 1);
+ }
+.form_request_content{
+    display: flex;
+    flex-direction: row;
+    background-image: url(/src/assets/img/img_form_optima.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.form_request_content_txt{
+    max-width: 480px;
+    padding: 35px 0 35px 35px;
+}
+
+.form_request_content_list{
+    margin: 20px 0;
+}
+.form_request_content_list_item{
+    position: relative;
+    margin: 5px 0
+}
+
+.request_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*_____________________________________________________________*/
