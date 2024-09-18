@@ -241,3 +241,54 @@
 
 
 /*_____________________________________________________________*/
+
+/*advantages____________________________________________________*/
+
+.advantages{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;
+
+}
+.advantages_content_blocks{
+    max-width: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin: 0 42px;
+}
+.advantages_content_blocks_img, .advantages_content_blocks_title, .advantages_content_blocks_subtitle{
+    margin: 15px 0;
+}
+
+.advantages_content_blocks_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100%;
+    background-color: rgba(245, 245, 245, 1);
+    padding: calc(15px + 15 * (100vw / 1980));
+
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(133, 133, 133, 0.25);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(133, 133, 133, 0.25);
+    box-shadow: 0px 0px 14px 0px rgba(133, 133, 133, 0.25);
+}
+.advantages_img{
+    max-width: 90px;
+    width: calc(60px + 30 * (100vw / 1980));
+
+}
+/*_____________________________________________________________*/
