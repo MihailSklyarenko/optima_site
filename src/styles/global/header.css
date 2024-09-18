@@ -20,7 +20,7 @@ header {
     z-index: 9;
 }
 .container-header{
-    padding: 0 10px;
+    padding: 0 30px;
 }
 .container-header, .contacts-header, .navigation-header{
     display: flex;

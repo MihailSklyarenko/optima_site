@@ -21,3 +21,7 @@ h1{
 
 }
 
+.fw_bold{
+    font-weight: 800;
+    color: rgba(0, 68, 77, 1);
+}
