@@ -195,6 +195,7 @@
     font-weight: 700;
     margin: 10px 0;
     font-size: calc(18px + 2 * (100vw / 1550));
+    text-align: left;
 }
 
 .price {
