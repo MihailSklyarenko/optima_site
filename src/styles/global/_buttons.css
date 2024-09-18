@@ -6,7 +6,7 @@ button{
     border: 0px;
     cursor: pointer;
 
-    min-width: calc(150px + 58 * (100vw / 1820));
+    min-width: calc(175px + 58 * (100vw / 1820));
 
     -webkit-box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
