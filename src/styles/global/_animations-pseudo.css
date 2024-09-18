@@ -41,6 +41,18 @@ button:hover{
     background-size: cover;
     width: calc(16px + 3 * (100vw / 1820));
     height: calc(16px + 3 * (100vw / 1820));
+
+}
+
+.mail::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    background-image: url(../../assets/ico/envelope.png);
+    background-size: cover;
+    width: calc(16px + 3 * (100vw / 1820));
+    height: calc(16px + 3 * (100vw / 1820));
 }
 
 .schedule_elem:last-child{
