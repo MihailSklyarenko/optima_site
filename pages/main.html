@@ -1,327 +1,573 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Оптима сервис</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../src/assets/ico/favicon2.ico"
+    />
+    <link rel="stylesheet" href="../src/styles/pages/main.css" />
+    <link rel="stylesheet" href="../src/styles/global/header.css" />
+    <link rel="stylesheet" href="../src/styles/global/footer.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="../src/styles/pages/main.css">
-    <link rel="stylesheet" href="../src/styles/global/header.css">
-    <link rel="stylesheet" href="../src/styles/global/footer.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="container-header">
-            <div class="navigation-header">
-                <div class="logo"><img src="/src/assets/img/logo/%D0%A0%D0%B5%D1%81%D1%83%D1%80%D1%81%202.png" alt=""></div>
-                <div class="nav-menu">
-                    <a class="nav-menu_elem white" href="">О нас</a>
-                    <a class="nav-menu_elem white" href="">Контакты</a>
-                    <a class="nav-menu_elem white" href="">Гарантия</a>
-                </div>
-            </div>
-            <div class="contacts-header">
-                <a class="adress white" href=" ">Ростов-на-Дону,<br> пр. Космонавтов, д. 43</a>
-                <a class="schedule white" href=" ">
-                    <p class="schedule_elem">Пн-Пт с 9:00 до 18:00</p>
-                    <p class="schedule_elem">Сб: 10:00-16:00</p>
-                </a>
-                <a class="tell white" href="tel: + 7">8 (999) 777-56-56</a>
-                <button class="button-request">
-                    <p class="button_name">Оставить заявку</p>
-                </button>
-            </div>
+      <div class="container-header">
+        <div class="navigation-header">
+          <div class="logo">
+            <img src="/src/assets/img/logo/logo-wh.png" alt="" />
+          </div>
+          <div class="nav-menu">
+            <a class="nav-menu_elem white" href="">О нас</a>
+            <a class="nav-menu_elem white" href="">Контакты</a>
+            <a class="nav-menu_elem white" href="">Гарантия</a>
+          </div>
         </div>
+        <div class="contacts-header">
+          <a class="adress white"
+            >Ростов-на-Дону,<br />
+            пр. Космонавтов, д. 43</a
+          >
+          <a class="schedule white">
+            <p class="schedule_elem">Пн-Пт с 9:00 до 18:00</p>
+            <p class="schedule_elem">Сб: 10:00-16:00</p>
+          </a>
+          <div class="phones">
+            <a class="tel white" href="tel: +79612803131">+7(961)280-31-31</a>
+            <a class="tel white" href="tel: +78632303131">+7(863)230-31-31</a>
+          </div>
+          <div class="status-header">
+            <button
+              class="button button-request"
+              data-modal-target="check-state-modal"
+            >
+              Узнать статус ремонта
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="check-state-modal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <h1>Проверка статуса ремонта</h1>
+          <div class="search-container">
+            <input
+              type="text"
+              class="search-input"
+              id="modal_search-input"
+              placeholder="Введите номер ремонта"
+            />
+            <button class="search-button">Проверить</button>
+          </div>
+          <div class="table-container">
+            <table id="data-table">
+              <thead>
+                <tr>
+                  <th>Устройство</th>
+                  <th>Статус</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- // -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </header>
 
     <div class="preview">
-        <div class="preview_background"><img src="/src/assets/img/Untitled.png" alt="" class="preview_background_img"></div>
-        <div class="wrapper_1248px">
-            <div class="preview_warp">
-                <div class="preview_inner">
-                    <div class="preview_content">
-                        <h1 class="preview_content_title">Сервисный центр электроники<br>Ремонт бытовой техники</h1>
-                        <p class="preview_content_subtitle">Профессиональный ремонт любых телевизоров в сервисном центре! Выезд и диагностика 0 руб. Предоставим гарантийный талон на все работы и запчасти!</p>
-                    </div>
-                    <div class="preview_blocks">
-
-                        <div class="preview_blocks_elem">
-                            <div class="preview_blocks_elem_inner">
-                                <img src="/src/assets/ico/free-icon-authentication-9311281.png" alt="" class="preview_blocks_elem_ico">
-                                <p class="preview_blocks_elem_title">Оригиналные запчасти</p>
-                                <p class="preview_blocks_elem_text">В наличии более 1200 видов оригинальных запчастей</p>
-                            </div>
-                        </div>
-
-                        <div class="preview_blocks_elem">
-                            <div class="preview_blocks_elem_inner">
-                                <img src="/src/assets/ico/free-icon-savings-5642603.png" alt="" class="preview_blocks_elem_ico">
-                                <p class="preview_blocks_elem_title">Без наценок</p>
-                                <p class="preview_blocks_elem_text">Озвучиваем стоимость ремонта до его начала</p>
-                            </div>
-                        </div>
-                        <div class="preview_blocks_elem">
-                            <div class="preview_blocks_elem_inner">
-                                <img src="/src/assets/ico/free-icon-package-delivered-5790678.png" alt="" class="preview_blocks_elem_ico">
-                                <p class="preview_blocks_elem_title">Выезды по всему городу</p>
-                                <p class="preview_blocks_elem_text">Делаем выезды по городу для ремонта крупной техники</p>
-                            </div>
-                        </div>
-                        <div class="preview_blocks_elem">
-                            <div class="preview_blocks_elem_inner">
-                                <img src="/src/assets/ico/notepad.png" alt="" class="preview_blocks_elem_ico">
-                                <p class="preview_blocks_elem_title">Оплата за результат</p>
-                                <p class="preview_blocks_elem_text">Вы платите только по факту выполненной работы</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="preview_background">
+        <img
+          src="/src/assets/img/background.png"
+          alt=""
+          class="preview_background_img"
+        />
+      </div>
+      <div class="preview_wrapper">
+        <div class="preview_wrap">
+          <div class="preview_inner">
+            <div class="preview_content">
+              <h1 class="preview_content_title">
+                Авторизованный сервисный центр по ремонту электроники
+              </h1>
+              <p class="preview_content_subtitle">
+                Профессиональный ремонт любой цифровой и бытовой техники. Ремонт
+                телевизоров <br />
+                Диагностика - бесплатно. Предоставим гарантию на все работы и
+                запасные части!
+              </p>
             </div>
+            <div class="preview_blocks">
+              <div class="preview_blocks_elem">
+                <div class="preview_blocks_elem_inner">
+                  <img
+                    src="/src/assets/ico/free-icon-authentication-9311281.png"
+                    alt=""
+                    class="preview_blocks_elem_ico"
+                  />
+                  <p class="preview_blocks_elem_title">Оригиналные запчасти</p>
+                  <p class="preview_blocks_elem_text">
+                    В наличии более 1000 видов оригинальных запасных частей
+                  </p>
+                </div>
+              </div>
+
+              <div class="preview_blocks_elem">
+                <div class="preview_blocks_elem_inner">
+                  <img
+                    src="/src/assets/ico/free-icon-savings-5642603.png"
+                    alt=""
+                    class="preview_blocks_elem_ico"
+                  />
+                  <p class="preview_blocks_elem_title">Без наценок</p>
+                  <p class="preview_blocks_elem_text">
+                    Озвучиваем стоимость ремонта до его начала
+                  </p>
+                </div>
+              </div>
+              <div class="preview_blocks_elem">
+                <div class="preview_blocks_elem_inner">
+                  <img
+                    src="/src/assets/ico/free-icon-package-delivered-5790678.png"
+                    alt=""
+                    class="preview_blocks_elem_ico"
+                  />
+                  <p class="preview_blocks_elem_title">Выезд по всему городу</p>
+                  <p class="preview_blocks_elem_text">
+                    Осуществляем выезд по городу для ремонта крупной техники
+                  </p>
+                </div>
+              </div>
+              <div class="preview_blocks_elem">
+                <div class="preview_blocks_elem_inner">
+                  <img
+                    src="/src/assets/ico/notepad.png"
+                    alt=""
+                    class="preview_blocks_elem_ico"
+                  />
+                  <p class="preview_blocks_elem_title">Оплата за результат</p>
+                  <p class="preview_blocks_elem_text">
+                    Вы платите только по факту выполненной работы
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="services">
-
-        <div class="wrapper">
-
-            <h2 class="services_title">Работаем со всеми типами неисправностей</h2>
-            <div class="services_inner">
-
-                <div class="services_colum">
-                    <div class="services_colum_elem">
-                        <div class="services_colum_elem_wrap">
-                            <div class="services_colum_elem_img"><img class="services_img" src="/src/assets/ico/smartphone.png" alt=""></div>
-                            <div class="services_colum_elem_price">
-                                <p class="price_title">Чистка</p>
-                                <div class="price">
-                                    <p class="price_name">Чистка после залития</p>
-                                    <p class="price_cost">от 1280</p>
-                                </div>
-                                <div class="price">
-                                    <p class="price_name">Чистка после залития</p>
-                                    <p class="price_cost">от 1280</p>
-                                </div>
-                                <div class="price">
-                                    <p class="price_name">Чистка после залития</p>
-                                    <p class="price_cost">от 1280</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services_colum_elem">
-                        <div class="services_colum_elem_wrap">
-                            <div class="services_colum_elem_img">
-                                <img class="services_img" src="/src/assets/ico/smartphone%20(1).png" alt="">
-                            </div>
-                            <div class="services_colum_elem_price">
-                                <p class="price_title">Чистка</p>
-                                <div class="price">
-                                    <p class="price_name">Чистка после залития</p>
-                                    <p class="price_cost">от 1280</p>
-                                </div>
-                                <div class="price">
-                                    <p class="price_name">Чистка после залития</p>
-                                    <p class="price_cost">от 1280</p>
-                                </div>
-                                <div class="price">
-                                    <p class="price_name">Чистка после залития</p>
-                                    <p class="price_cost">от 1280</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="wrapper">
+        <h2 class="services_title">Работаем со всеми типами неисправностей</h2>
+        <div class="services_inner">
+          <div class="services_colum">
+            <div class="services_colum_elem">
+              <div class="services_colum_elem_wrap">
+                <div class="services_colum_elem_img">
+                  <img
+                    class="services_img"
+                    src="/src/assets/ico/smartphone.png"
+                    alt=""
+                  />
                 </div>
-                <div class="services_colum">
-                    <div class="services_colum_elem box-shadow_green">
-                        <div class="services_colum_elem_wrap">
-                            <div class="services_colum_elem_img">
-                                <img class="services_img" src="/src/assets/ico/diagnostic.png" alt="">
-                            </div>
-                            <div class="services_colum_elem_price">
-                                <p class="price_title">Диагностика</p>
-                                <div class="price">
-                                    <p class="price_name">Диагностика устройства</p>
-                                    <p class="price_cost fw_bold">бесплатно</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services_colum_elem">
-                        <div class="services_colum_elem_wrap">
-                            <div class="services_colum_elem_img">
-                                <img class="services_img" src="/src/assets/ico/settings%20(1).png" alt="">
-                            </div>
-                            <div class="services_colum_elem_price">
-                                <p class="price_title">Настройка</p>
-                                <div class="price">
-                                    <p class="price_name">Чистка после залития</p>
-                                    <p class="price_cost">от 1280</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services_colum_elem">
-                        <div class="services_colum_elem_wrap">
-                            <div class="services_colum_elem_img">
-                                <img class="services_img" src="/src/assets/ico/firmware.png" alt="">
-                            </div>
-                            <div class="services_colum_elem_price">
-                                <p class="price_title">Прошивка</p>
-                                <div class="price">
-                                    <p class="price_name">Замена разъема HDMI</p>
-                                    <p class="price_cost">от 1520</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="services_colum_elem_price">
+                  <p class="price_title">Чистка</p>
+                  <div class="price">
+                    <p class="price_name">Чистка после залития</p>
+                    <p class="price_cost">от 1200</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">
+                      Восстановление программного обеспечения
+                    </p>
+                    <p class="price_cost">от 1000</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">Техническое обслуживание</p>
+                    <p class="price_cost">от 1200</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">
+                      Заправка кондиционеров и холодильников
+                    </p>
+                    <p class="price_cost">от 2500</p>
+                  </div>
                 </div>
-                <div class="services_colum">
-                    <div class="services_colum_elem">
-                        <div class="services_colum_elem_wrap">
-                            <div class="services_colum_elem_img">
-                                <img class="services_img" src="/src/assets/ico/settings%20(2).png" alt="">
-                            </div>
-
-                            <div class="services_colum_elem_price">
-                                <p class="price_title  text-align-center">Замена деталей</p>
-                                <div class="price">
-                                    <p class="price_name">Замена разъема HDMI, аудио, USB</p>
-                                    <p class="price_cost">от 1520</p>
-                                </div>
-                                <div class="price">
-                                    <p class="price_name">Замена чипа (реболинг)</p>
-                                    <p class="price_cost">от 2500</p>
-                                </div>
-                                <div class="price">
-                                    <p class="price_name">Замена разъема на плате</p>
-                                    <p class="price_cost">от 880</p>
-                                </div>
-                                <div class="price">
-                                    <p class="price_name">Замена платы</p>
-                                    <p class="price_cost">от 1250</p>
-                                </div>
-                                <div class="price">
-                                    <p class="price_name">Замена модуля Wi-Fi</p>
-                                    <p class="price_cost">от 550</p>
-                                </div>
-                                <div class="price">
-                                    <p class="price_name">Замена дисплея</p>
-                                    <p class="price_cost">от 1500</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+              </div>
             </div>
+            <div class="services_colum_elem">
+              <div class="services_colum_elem_wrap">
+                <div class="services_colum_elem_img">
+                  <img
+                    class="services_img"
+                    src="/src/assets/ico/smartphone%20(1).png"
+                    alt=""
+                  />
+                </div>
+                <div class="services_colum_elem_price">
+                  <p class="price_title">Блочный ремонт</p>
+                  <div class="price">
+                    <p class="price_name">Замена дисплейного модуля</p>
+                    <p class="price_cost">от 2000</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">Замена аккумулятора</p>
+                    <p class="price_cost">от 1500</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">Замена корпуса</p>
+                    <p class="price_cost">от 1500</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="services_colum">
+            <div class="services_colum_elem box-shadow_green">
+              <div class="services_colum_elem_wrap">
+                <div class="services_colum_elem_img">
+                  <img
+                    class="services_img"
+                    src="/src/assets/ico/diagnostic.png"
+                    alt=""
+                  />
+                </div>
+                <div class="services_colum_elem_price">
+                  <p class="price_title">Диагностика</p>
+                  <div class="price">
+                    <p class="price_name">Диагностика устройства</p>
+                    <p class="price_cost fw_bold">бесплатно</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services_colum_elem">
+              <div class="services_colum_elem_wrap">
+                <div class="services_colum_elem_img">
+                  <img
+                    class="services_img"
+                    src="/src/assets/ico/settings%20(1).png"
+                    alt=""
+                  />
+                </div>
+                <div class="services_colum_elem_price">
+                  <p class="price_title">Настройка</p>
+                  <div class="price">
+                    <p class="price_name">Прошивка BIOS</p>
+                    <p class="price_cost">от 1000</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">Калибровка датчиков</p>
+                    <p class="price_cost">от 1500</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services_colum_elem">
+              <div class="services_colum_elem_wrap">
+                <div class="services_colum_elem_img">
+                  <img
+                    class="services_img"
+                    src="/src/assets/ico/firmware.png"
+                    alt=""
+                  />
+                </div>
+                <div class="services_colum_elem_price">
+                  <p class="price_title">Прошивка</p>
+                  <div class="price">
+                    <p class="price_name">Прошивка BIOS</p>
+                    <p class="price_cost">от 1000</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">
+                      Удаление аккаунтов с сохранением данных
+                    </p>
+                    <p class="price_cost">от 2000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="services_colum">
+            <div class="services_colum_elem">
+              <div class="services_colum_elem_wrap">
+                <div class="services_colum_elem_img">
+                  <img
+                    class="services_img"
+                    src="/src/assets/ico/settings%20(2).png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="services_colum_elem_price">
+                  <p class="price_title text-align-center">
+                    Компонентный ремонт
+                  </p>
+                  <div class="price">
+                    <p class="price_name">Замена разъема HDMI, аудио, USB</p>
+                    <p class="price_cost">от 1520</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">Замена чипа (реболинг)</p>
+                    <p class="price_cost">от 2000</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">
+                      Восстановление токопроводящих дорожек
+                    </p>
+                    <p class="price_cost">от 2000</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">Ремонт подсветки телевизоров</p>
+                    <p class="price_cost">от 3000</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">
+                      Ремонт кнопок и механизмов кофе-машины
+                    </p>
+                    <p class="price_cost">от 3000</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">
+                      Ремонт блока управления стиральной машины
+                    </p>
+                    <p class="price_cost">от 3000</p>
+                  </div>
+                  <div class="price">
+                    <p class="price_name">Ремонт аудиосистем и колонок</p>
+                    <p class="price_cost">от 2000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="form_problem">
-
-        <div class="form_problem_content">
-            <div class="form_problem_txt">
-                <h2 class="form_problem_title">Здесь нет вашей проблемы?</h2>
-                <p class="form_problem_subtitle">Расскажите нам о вашей проблеме, оставив заявку на сайте. Специалисты свяжутся с вами для дальнейшей консультации и сориентируют по цене.</p>
-            </div>
-            <button class="form_problem_button">Рассказать о проблеме</button>
+      <div class="form_problem_content">
+        <div class="form_problem_txt">
+          <h2 class="form_problem_title">Здесь нет вашей проблемы?</h2>
+          <p class="form_problem_subtitle">
+            Расскажите нам о вашей проблеме, позвонив по номерам
+            <a href="tel: +79612803131"><b>+7(961)280-31-31</b></a>
+            или
+            <a href="tel: +78632303131"><b>+7(863)230-31-31</b></a>
+            <br />
+            Наши специалисты уточнят детали проблемы, проконсультируют Вас и
+            сориентируют по примерной стоимости и срокам ремонта.
+          </p>
         </div>
-
+      </div>
     </div>
     <div class="wrapper">
-        <div class="advantages">
-            <div class="advantages_content_blocks">
-                <div class="advantages_content_blocks_img"><img class="advantages_img" src="/src/assets/ico/free.png" alt=""></div>
-                <h3 class="advantages_content_blocks_title fw_bold">Бесплатно</h3>
-                <p class="advantages_content_blocks_subtitle">Бесплатный выезд по городу и диагностика крупной техники, независимо от удаленности клиента</p>
-            </div>
-            <div class="advantages_content_blocks">
-                <div class="advantages_content_blocks_img"><img class="advantages_img" src="/src/assets/ico/shield.png" alt=""></div>
-                <h3 class="advantages_content_blocks_title fw_bold">Гарантия</h3>
-                <p class="advantages_content_blocks_subtitle">Гарантия на работу и запчасти 3 месяца. Надежность и качество подтверждены документально</p>
-            </div>
-            <div class="advantages_content_blocks">
-                <div class="advantages_content_blocks_img"><img class="advantages_img" src="/src/assets/ico/notification%20(1).png" alt=""></div>
-                <h3 class="advantages_content_blocks_title fw_bold">Контроль</h3>
-                <p class="advantages_content_blocks_subtitle">Информируем о статусе заявки через SMS-уведомления для вашего удобства и спокойствия</p>
-            </div>
-            <div class="advantages_content_blocks">
-                <div class="advantages_content_blocks_img"><img class="advantages_img" src="/src/assets/ico/avatar.png" alt=""></div>
-                <h3 class="advantages_content_blocks_title fw_bold">Партнерство</h3>
-                <p class="advantages_content_blocks_subtitle">Обслуживаем юридических лиц с гарантией высокого качества и надежного партнёрства</p>
-            </div>
+      <div class="advantages">
+        <div class="advantages_content_blocks">
+          <div class="advantages_content_blocks_img">
+            <img class="advantages_img" src="/src/assets/ico/free.png" alt="" />
+          </div>
+          <h3 class="advantages_content_blocks_title fw_bold">Бесплатно</h3>
+          <p class="advantages_content_blocks_subtitle">
+            Бесплатный выезд по городу и диагностика крупной техники, независимо
+            от удаленности клиента
+          </p>
         </div>
+        <div class="advantages_content_blocks">
+          <div class="advantages_content_blocks_img">
+            <img
+              class="advantages_img"
+              src="/src/assets/ico/shield.png"
+              alt=""
+            />
+          </div>
+          <h3 class="advantages_content_blocks_title fw_bold">Гарантия</h3>
+          <p class="advantages_content_blocks_subtitle">
+            Гарантия на работу и запчасти 3 месяца. Надежность и качество
+            подтверждены документально
+          </p>
+        </div>
+        <div class="advantages_content_blocks">
+          <div class="advantages_content_blocks_img">
+            <img
+              class="advantages_img"
+              src="/src/assets/ico/notification%20(1).png"
+              alt=""
+            />
+          </div>
+          <h3 class="advantages_content_blocks_title fw_bold">Контроль</h3>
+          <p class="advantages_content_blocks_subtitle">
+            Информируем о статусе заявки через SMS-уведомления для вашего
+            удобства и спокойствия
+          </p>
+        </div>
+        <div class="advantages_content_blocks">
+          <div class="advantages_content_blocks_img">
+            <img
+              class="advantages_img"
+              src="/src/assets/ico/avatar.png"
+              alt=""
+            />
+          </div>
+          <h3 class="advantages_content_blocks_title fw_bold">Партнерство</h3>
+          <p class="advantages_content_blocks_subtitle">
+            Обслуживаем юридических лиц с гарантией высокого качества и
+            надежного партнёрства
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="form_request">
-        <div class="wrapper">
-            <div class="form_request_content">
-                <div class="form_request_content_txt">
-                    <h2 class="form_request_content_title">Оставьте заявку на <span class="h3 fw_bold">бесплатную диагностику</span> на сайте!</h2>
-                    <p class="form_request_content_subtitle">Оставьте заявку на сайте, мы свяжемся с вами в ближайшее время для:</p>
-                    <ul class="form_request_content_list">
-                        <li class="form_request_content_list_item">Подтверждения заявки</li>
-                        <li class="form_request_content_list_item">Расчета стоимости </li>
-                        <li class="form_request_content_list_item">Согласования сроков</li>
-                    </ul>
-                    <form action="" class="request_content">
-                        <button class="button-request">
-                            <p class="button_name">+ 7 000 000 00 00 </p>
-                        </button>
-                        <button class="button-request">
-                            <p class="button_name">Оставить заявку</p>
-                        </button>
-                    </form>
-                </div>
-            </div>
+      <div class="wrapper">
+        <div class="form_request_content">
+          <div class="form_request_content_txt">
+            <h2 class="form_request_content_title">
+              Оставьте заявку на
+              <span class="h3 fw_bold">бесплатную диагностику</span> на сайте!
+            </h2>
+            <p class="form_request_content_subtitle">
+              Оставьте заявку на сайте, мы свяжемся с вами в ближайшее время
+              для:
+            </p>
+            <ul class="form_request_content_list">
+              <li class="form_request_content_list_item">
+                Подтверждения заявки
+              </li>
+              <li class="form_request_content_list_item">Расчета стоимости</li>
+              <li class="form_request_content_list_item">
+                Согласования сроков
+              </li>
+            </ul>
+            <form action="" class="request_content">
+              <button class="button button-request">
+                <p class="button_phone">+ 7 000 000 00 00</p>
+              </button>
+              <button class="button button-request">
+                <p class="button_phone">Оставить заявку</p>
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
-<div class="certificates">
-<div class="wrapper_1248px">
-    <div class="certificates_content">
-        <div class="certificates_content_txt">
+    <div class="certificates">
+      <div class="certificates_wrapper">
+        <div class="certificates_content">
+          <div class="certificates_content_txt">
             <h2 class="certificates_title">Сертификаты</h2>
-            <p class="certificates_subtitle">Ремонт техники производит наша опытная команда, которая прошла сертифицированное обучение. Все комплектующие, используемые при ремонте имеют соответствующие сертификаты и отличаются своей прочностью и износостойкостью.</p>
+            <p class="certificates_subtitle">
+              Ремонт техники производит наша опытная команда, которая прошла
+              сертифицированное обучение.
+              <br />
+              Комплектующие, используемые при ремонте, являются, оригинальными,
+              за исключением случаев, когда клиент просит "подешевле". Мы не
+              приверженцы использования дешевых аналогов. Для нас важно, чтобы
+              клиент остался доволен и не тратил свое время на походы к нам для
+              устранения дефектов из-за некачественных запасных частей.
+            </p>
+          </div>
+          <div class="certificates_content_img">
+            <img
+              src="/src/assets/img/certificates/Redmond.jpg"
+              alt=""
+              class="img-certificates"
+            />
+            <img
+              src="/src/assets/img/certificates/BBK.jpg"
+              alt=""
+              class="img-certificates"
+            />
+            <img
+              src="/src/assets/img/certificates/Dyson.jpg"
+              alt=""
+              class="img-certificates"
+            />
+            <img
+              src="/src/assets/img/certificates/LG.jpg"
+              alt=""
+              class="img-certificates"
+            />
+          </div>
         </div>
-        <div class="certificates_content_img">
-                <img src="/src/assets/img/certificates/Redmond.jpg" alt="" class="img-certificates">
-                <img src="/src/assets/img/certificates/BBK.jpg" alt="" class="img-certificates">
-                <img src="/src/assets/img/certificates/Dyson.jpg" alt="" class="img-certificates">
-                <img src="/src/assets/img/certificates/LG.jpg" alt="" class="img-certificates">
-            </div>
+      </div>
     </div>
-</div>
-</div>
     <footer>
-        <div class="wrapper">
-           <div class="footer_content">
-            <div class="footer-map">
-                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростов‑на‑Дону</a><a href="https://yandex.ru/maps/39/rostov-na-donu/house/prospekt_kosmonavtov_43/Z0AYcQZhT0cBQFptfX54eHtrZQ==/?ll=39.711626%2C47.299781&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:10px;">Проспект Космонавтов, 43 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=39.711626%2C47.299781&mode=whatshere&whatshere%5Bpoint%5D=39.711626%2C47.299781&whatshere%5Bzoom%5D=17&z=16" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+      <div class="footer-wrapper">
+        <div class="footer_content">
+          <div class="footer-map">
+            <div style="position: relative; overflow: hidden">
+              <a
+                href="https://yandex.ru/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 0px;
+                "
+                >Ростов‑на‑Дону</a
+              ><a
+                href="https://yandex.ru/maps/39/rostov-na-donu/house/prospekt_kosmonavtov_43/Z0AYcQZhT0cBQFptfX54eHtrZQ==/?ll=39.711626%2C47.299781&utm_medium=mapframe&utm_source=maps&z=16"
+                style="
+                  color: #dadada;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 10px;
+                "
+                >Проспект Космонавтов, 43 — Яндекс Карты</a
+              ><iframe
+                src="https://yandex.ru/map-widget/v1/?ll=39.711626%2C47.299781&mode=whatshere&whatshere%5Bpoint%5D=39.711626%2C47.299781&whatshere%5Bzoom%5D=17&z=16"
+                width="1000"
+                height="400"
+                frameborder="1"
+                allowfullscreen="true"
+                style="position: relative"
+              ></iframe>
             </div>
-            <div class="footer-contacts">
-                <div class="footer-contacts_content">
-                    <h2 class="footer-contacts_content_title white">Мы находимся <br> <span>В Ростове-на-Дону</span></h2>
-                    <div class="footer-contacts_content_adress">
-                        <a class="adress white" href=" ">пр. Космонавтов, д. 43<br><span>Северный район</span></a>
-                        <div class="footer_schedule">
-                            <p class="schedule_elem white">Пн-Пт с 9:00 до 18:00</p>
-                            <p class="schedule_elem white">Сб: 10:00-16:00, Вс: выходной</p>
-                        </div>
-                    </div>
-                    <h3 class="footer-contacts_content_connection_title white">Связаться с нами</h3>
-                    <div class="footer-contacts_content_connection">
-                        <a class="tell white" href="tel: + 7">8 (999) 777-56-56</a>
-                        <a class="mail white" href="mailto:email@gmail.com">email@gmail.com</a>
-                    </div>
+          </div>
+          <div class="footer-contacts">
+            <div class="footer-contacts_content">
+              <h2 class="footer-contacts_content_title white">
+                Мы находимся <br />
+                <span>В Ростове-на-Дону</span>
+              </h2>
+              <div class="footer-contacts_content_adress">
+                <p class="adress white">
+                  пр. Космонавтов, д. 43<br /><span>Северный район</span>
+                </p>
+                <div class="schedule">
+                  <p class="schedule_elem white">Пн-Пт с 9:00 до 18:00</p>
+                  <p class="schedule_elem white">
+                    Сб: 10:00-16:00, Вс: выходной
+                  </p>
                 </div>
+              </div>
+              <h3 class="footer-contacts_content_connection_title white">
+                Связаться с нами
+              </h3>
+              <div class="footer-contacts_content_connection">
+                <div class="phones">
+                  <a class="tel white" href="tel: +79612803131"
+                    >+7(961)280-31-31</a
+                  >
+                  <a class="tel white" href="tel: +78632303131"
+                    >+7(863)230-31-31</a
+                  >
+                  <a class="email white" href="mailto:service@optima-sc.ru"
+                    >service@optima-sc.ru</a
+                  >
+                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <script src="/src/js/main.js"></script>
-</body>
-
+  </body>
 </html>

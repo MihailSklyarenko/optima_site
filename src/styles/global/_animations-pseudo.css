@@ -1,75 +1,73 @@
 /*____Псевдо элменты____________________________________________________________________*/
 
-button:hover{
-    -webkit-box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.4);
-    transition: .3s;
+.button:hover {
+  -webkit-box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
 
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 /*______________________________________________________________________________________*/
 /*____Псевдо элменты____________________________________________________________________*/
 
-.adress::after{
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -25px;
-    background-image: url(../../assets/ico/placeholder-filled-point.png);
-    background-size: cover;
-    width: calc(14px + 3 * (100vw / 1920));
-    height: calc(14px + 3 * (100vw / 1920));
+.adress::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -25px;
+  background-image: url(../../assets/ico/placeholder-filled-point.png);
+  background-size: cover;
+  width: calc(14px + 3 * (100vw / 1920));
+  height: calc(14px + 3 * (100vw / 1920));
 }
-.schedule::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -25px;
-    background-image: url(../../assets/ico/clock-time.png);
-    background-size: cover;
-    width: calc(14px + 3 * (100vw / 1920));
-    height: calc(14px + 3 * (100vw / 1920));
+.schedule::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background-image: url(../../assets/ico/clock-time.png);
+  background-size: cover;
+  width: calc(14px + 3 * (100vw / 1920));
+  height: calc(14px + 3 * (100vw / 1920));
 }
-.tell::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -25px;
-    background-image: url(../../assets/ico/telephone.png);
-    background-size: cover;
-    width: calc(16px + 3 * (100vw / 1820));
-    height: calc(16px + 3 * (100vw / 1820));
-
-}
-
-.mail::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -25px;
-    background-image: url(../../assets/ico/envelope.png);
-    background-size: cover;
-    width: calc(16px + 3 * (100vw / 1820));
-    height: calc(16px + 3 * (100vw / 1820));
+.tel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background-image: url(../../assets/ico/telephone.png);
+  background-size: cover;
+  width: calc(16px + 3 * (100vw / 1820));
+  height: calc(16px + 3 * (100vw / 1820));
 }
 
-.schedule_elem:last-child{
-    opacity: 70%;
+.email::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background-image: url(../../assets/ico/envelope.png);
+  background-size: cover;
+  width: calc(16px + 3 * (100vw / 1820));
+  height: calc(16px + 3 * (100vw / 1820));
 }
 
-.form_request_content_list_item::before{
-    position: absolute;
-    top: 0;
-    left: -28px;
+.schedule_elem:last-child {
+  opacity: 70%;
+}
 
-    content:'';
-    background-image: url(/src/assets/ico/check.png);
-    background-size: contain;
-    width: 20px;
-    height: 100%;
+.form_request_content_list_item::before {
+  position: absolute;
+  top: 0;
+  left: -28px;
 
+  content: "";
+  background-image: url(/src/assets/ico/check.png);
+  background-size: contain;
+  width: 20px;
+  height: 100%;
 }
 
 /*________________________________________________________________________*/
